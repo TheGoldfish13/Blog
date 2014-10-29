@@ -18,7 +18,7 @@
  	else { // if it exists it echoes that it has already been created
  			echo "Database has already been created";
  		}
-
+/*test comment for source tree*/
  	$connection->close();
 
 ?>
