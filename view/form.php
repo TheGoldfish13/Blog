@@ -1,0 +1,18 @@
+<h1>Create Blog Post</h1>
+
+<form>
+	<div>
+		<label for="title"> Title: </label>
+		<input type="text" name="title" /> <!--creates a input box (one line) with Title: beside it and the name title-->
+	</div>
+
+	<div>
+		<label for="post">Post: </label> <!-- creates a text area (multiple lines) called post, with Post: beside it-->
+		<textarea name="post"></textarea>
+	</div>
+
+	<div>
+		<button type="submit">Submit</button>
+	</div>
+
+</form>
