@@ -1,4 +1,6 @@
-
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
 <?php 
 	require_once(__DIR__ . "/view/header.php"); /*puts a header*/
 	require_once(__DIR__ . "/view/navigation.php"); /*inserts the code in navigation.php*/
