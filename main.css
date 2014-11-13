@@ -1,6 +1,4 @@
-body{
-	background-color: lime;
-}
+
 @media (max-width: 1024px) { /*for ipad*/
 	body{
 		background-color: red;
