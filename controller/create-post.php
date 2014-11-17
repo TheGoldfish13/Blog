@@ -1,6 +1,6 @@
 <!-- this file is a controller that recieves the input from the post -->
 <?php
-	require_once(__DIR__ . "/../model/database.php"); /*puts contents of database.php here (server info) */
+	require_once(__DIR__ . "/../model/config.php"); /*puts contents of config.php here (server info) */
 
 	$connection = new mysqli($host, $username, $password, $database); /*creates a connection to the database*/
 
@@ -9,7 +9,7 @@
 
 	$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post' "); /*query to insert values called post and title into table to be stored in the database*/
 
-	if($query) { /*if query was succesful then echoes this*/
+	if($query) { /*if query exists then echoes this*/
 		echo "<p> succesfully inserted post: $title </p>";
 	}
 	else { /*if not then it echoes the connection error*/
