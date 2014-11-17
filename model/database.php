@@ -12,4 +12,15 @@ class Database { /*we use a class instead of a function because a class is an in
 		$this->password = $password;
 		$this->database = $database;
 	}
+	public function openConnection() { /*this function will open connection*/
+
+	}
+	public function closeConnection() { /*this will close it*/
+
+	}
+	public function query($string) {
+
+	}
+
+
 }
