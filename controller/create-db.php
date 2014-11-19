@@ -1,6 +1,5 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //takes code from config and connects to server
- 	$connection = new mysqli($host, $username, $password); //the variable used to connect to server
  	if($connection->connect_error) { //if it doesnt connect kill the program, and echo the error
  		die("Error: " . $connection->connection_error);
  	} 

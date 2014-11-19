@@ -6,6 +6,8 @@ class Database { /*we use a class instead of a function because a class is an in
 	private $password;
 	private $database;
 
+	/*a function is a set of instructions in a block of code that can be run at any time*/
+	
 	public function __construct($host, $username, $password, $database) { /*accessing the global variables as local variables that will disapear once the function has been run*/
 		$this->host = $host;
 		$this->username = $username;
@@ -26,7 +28,12 @@ class Database { /*we use a class instead of a function because a class is an in
 
 	}
 	public function query($string) {
+		$this->openConnection(); /*opens connection*/
 
+		$query = $this->connection->query($string); /*creates a query and stores the string in the $query variable*/
+
+		$this->closeConnection(); /*closes connection*/
+		return $query;
 	}
 
 
