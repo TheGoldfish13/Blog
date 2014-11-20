@@ -1,6 +1,7 @@
 <?php
-	$path = "/Blog/"; /*stores the path to the project folder*/
+	require_once(__DIR__ . "/database.php");
 
+	$path = "/Blog/"; /*stores the path to the project folder*/
 	$host = "localhost";
 	$username = "root";
 	$password = "root";
