@@ -1,5 +1,6 @@
 <head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 </head>
 <?php 
 	require_once(__DIR__ . "/view/header.php"); /*puts a header*/
