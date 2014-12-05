@@ -1,7 +1,10 @@
 <?php 
 	require_once(__DIR__ . "/../model/config.php");
 ?>
-
+<head>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
 
 <h1>Create Blog Post</h1>
 

@@ -1,8 +1,11 @@
 body{
 	background-image: url("../images/sos.png");
 }
-#testing{
-	color:black;
+#bleh{
+	text-align: center;
+}
+a:hover, a:visited, a:link, a:active, nav{
+    text-decoration: none;
 }
 @media (max-width: 1024px) { /*for ipad*/
 	body{

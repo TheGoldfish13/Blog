@@ -14,4 +14,18 @@ if($query) {
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>"; //echos out that the table has already been created
 	}
+
+	$query = $_SESSION["connection"]->query("CREATE TABLE users (" /*creates a table that contains the information of username, email, and password*/
+		. "id int(11) NOT NULL AUTO_INCREMENT,"
+		. "username varchar(30) NOT NULL,"
+		. "email varchar(50) NOT NULL,"
+		. "password varchar(128) NOT NULL,"
+		. "salt char(128) NOT NULL,"
+		. "PRIMARY KEY (id))");
+	if($query) {
+		echo "<p>Succesfully created table user: </p>";
+	}
+	else {
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}
 ?>
