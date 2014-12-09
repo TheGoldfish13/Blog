@@ -6,6 +6,7 @@
 		. "id int(11) NOT NULL AUTO_INCREMENT," /*needs a id that will be an integer, cant be empty*/
 		. "title varchar (255) NOT NULL," /*needsa title up to 255 characters and cant be nothing*/
 		. "post text NOT NULL,"  /*the actual text of the post, Cant be empty*/
+		. "DateTime datetime NOT NULL,"
 		. "PRIMARY KEY (id) )"); /*the tables primary key is the id*/
 
 if($query) {
@@ -23,7 +24,7 @@ if($query) {
 		. "salt char(128) NOT NULL,"
 		. "PRIMARY KEY (id))");
 	if($query) {
-		echo "<p>Succesfully created table user: </p>";
+		echo "<p>Succesfully created table user: </p>"; /*checking if table user was succefully created*/
 	}
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";
