@@ -1,10 +1,12 @@
 <?php 
 	require_once(__DIR__ . "/../model/config.php");
+	require_once(__DIR__ . "/../controller/login-verify.php");
+ 
+	if(!authenticateUser()) { /*if the user isnt logged in as an authenticated user than they will be redirected to index*/
+		header("Location:" . $path . "index.php");
+		die();
+	}
 ?>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-</head>
 
 <h1>Create Blog Post</h1>
 
