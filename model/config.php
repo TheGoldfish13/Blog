@@ -1,6 +1,7 @@
 <?php
 	require_once(__DIR__ . "/database.php");
 	session_start();
+	session_regenerate_id(true);
 
 	$path = "/Blog/"; /*stores the path to the project folder*/
 	$host = "localhost";
