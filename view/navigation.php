@@ -12,7 +12,7 @@
 						<div class="col-xs-1"></div>
 						<a href="<?php echo $path . "post.php" ; ?>"  class="bleh sticky col-xs-5" id="move"><h1>Blog Post Form </h1></a> <!-- link that goes to post.php -->
 						<!-- concatinates the path variable with "post.php" to make the right path -->
-						<a href="<?php echo $path . "controller/logout-user.php" ; ?>"  class="bleh sticky col-xs-5" id="move2"><h1>LOGOUT </h1></a>	
+						<a href="<?php echo $path . "controller/logout-user.php" ; ?>"  class="bleh sticky col-xs-5" id="move2"><h1>Logout</h1></a>	
 					</div>	
 				<?php 	
 					}

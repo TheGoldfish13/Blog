@@ -11,10 +11,10 @@
 
 		if($row["password"] === crypt($password, $row["salt"])) { /*if the inputted username and password are authenticated user then it echoes loggin succesfull*/
 			$_SESSION["authenticated"] = true;
-			echo "<p>Login Successfull </p>";
 ?>			
 			<a href="<?php echo $path . "index.php" ; ?>"  class="bleh sticky col-xs-5"><h1>HOME </h1></a>
-<?php			
+<?php
+			echo "<p>Login Successfull </p>";			
 		}
 		else {
 			echo "<p> invalid username or password </p>"; /*if not then it echoes invalid username or password*/
