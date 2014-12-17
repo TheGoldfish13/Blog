@@ -22,7 +22,6 @@ a:hover, a:visited, a:link, a:active, nav{
     top: 0;  
     z-index: 100;  
     border-top: 0; 
-    background-color: white; 
 } 
 .post{
 	margin-top: 100px;
@@ -50,6 +49,10 @@ a:hover, a:visited, a:link, a:active, nav{
 }
 #kiwi{
 	text-align: center;
+}
+textarea{
+	height: 200px;
+	width:200px;
 }
 @media (max-width: 1024px) { /*for ipad*/
 	body{

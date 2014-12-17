@@ -17,7 +17,7 @@
 	</div>
 
 	<div>
-		<label for="post">Post: </label> <!-- creates a text area (multiple lines) called post, with Post: beside it-->
+		<label for="post" id="post-box">Post: </label> <!-- creates a text area (multiple lines) called post, with Post: beside it-->
 		<textarea name="post"></textarea>
 	</div>
 

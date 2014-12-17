@@ -10,9 +10,12 @@
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' "); /*query to insert values called post and title into table to be stored in the database*/
 
 	if($query) { /*if query exists then echoes this*/
+?>		
+		<a href="<?php echo $path . "index.php" ; ?>"  class="bleh sticky col-xs-5"><h1>HOME </h1></a>
+<?php		
 		echo "<p> succesfully inserted post: $title </p>";
 		echo "Posted on: " . $date->format("M d, Y") . " at " . $time->format("g:i"); /*echoes the date and time variables*/
 	}
 	else { /*if not then it echoes the connection error*/
-		echo "<p>" . $_SESSION["connection"]->error . "</p>"; /*the session variable replaces the connection variable*/
-	}
+		echo "<p>" . $_SESSION["connecton"]->error . "</p>"; /*the session variable replaces the connection variable*/
+}	
