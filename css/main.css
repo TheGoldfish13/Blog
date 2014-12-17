@@ -1,11 +1,54 @@
 body{
 	background-image: url("../images/sos.png");
 }
-#bleh{
+nav{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	margin: 0 auto;
+}
+.bleh{
 	text-align: center;
+	height:80px;
+	position: fixed;
 }
 a:hover, a:visited, a:link, a:active, nav{
     text-decoration: none;
+}
+.sticky {  
+    position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+} 
+.post{
+	margin-top: 100px;
+}
+.weird{
+	height:80px;
+}
+#move{
+	padding-right: 20%;
+}
+#move2{
+	padding-left: 20%;
+}
+#username-box{
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+#password-box{
+	text-align: center;
+	margin-bottom: 5px;
+}
+.button{
+	margin-left: 48%;
+}
+#kiwi{
+	text-align: center;
 }
 @media (max-width: 1024px) { /*for ipad*/
 	body{
